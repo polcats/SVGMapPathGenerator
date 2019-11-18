@@ -1,0 +1,32 @@
+<style>
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+</Style>
+
+
+<div id="coords" style="width: 768px; height: 1205px; margin: 0px; padding: 0px; background: url(map/map.svg) center center no-repeat scroll;">
+Click anywhere to display coordinates.
+If problems occur, set your browser to fullscreen view.
+</div>
+
+<script>
+    document.getElementById("coords").onclick = userClicked;
+
+    function userClicked() {
+        var x = event.clientX;// - window.pageXOffset;
+        var y = event.clientY + window.pageYOffset;
+
+        //var top  = window.pageYOffset || document.documentElement.scrollTop,
+        //left = window.pageXOffset || document.documentElement.scrollLeft;
+
+        var snowball = document.getElementById("circle");
+        document.getElementById("coords").innerHTML = "x=" + x + "<br> y=" + y;
+        snowball.style.position = "absolute";
+        snowball.style.left = (x-5)  + 'px';
+        snowball.style.top = (y-5) + 'px';
+    }
+</script>
+
+<div id="circle" style="width: 10px; height: 10px; border: 1px solid red; background: red; border-radius: 10px; cursor: arrow;"></div>
