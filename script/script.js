@@ -24,6 +24,11 @@ function addPoint() {
     }
 }
 
+function clearForm() {
+    document.getElementById("points").value = "";
+    document.getElementsByTagName("svg")[0].innerHTML = "";
+}
+
 function parseSVG(s) {
     var div = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');
     div.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg">' + s + '</svg>';

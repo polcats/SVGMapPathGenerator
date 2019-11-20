@@ -43,17 +43,22 @@ div#circle
 div#form
 {
     position: fixed;
-    right: 10px;
+    left: 600px;
     top: 0px
 }
 
 span#form-note
 {
-    color:red
+    color:#fff
 }
 
 textarea#points
 {
     width: 300px;
     height: 200px;
+}
+
+input[type="button"]
+{
+    padding: 5px;
 }

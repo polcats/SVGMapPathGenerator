@@ -7,20 +7,18 @@
 
 <body>
     <div id="circle"></div>
-    <div id="coordinates">
-        Click anywhere to display coordinates.<br>
-        If problems occur, set your browser to fullscreen view.
-    </div>
+    <div id="coordinates"></div>
     <svg id="map" style="background: url(map/map.svg) center center no-repeat scroll;"></svg>
 
     <div id="form">
         <p>
             <h1>Enter points </h1>
-            <span id="form-note">NOTE: Separate every x-y pair by a comma. eg (x y, x y, x
-                y)</span><br><br>
+            <span id="form-note">Click anywhere to get the coordinates.<br>
+                <em>If problems occur, set your browser to fullscreen view.</em></span><br><br>
             <textarea id="points"></textarea><br><br>
-            <input type="button" value="show path" onclick="show();">
             <input type="button" value="add point" onclick="addPoint()">
+            <input type="button" value="show path" onclick="show();">
+            <input type="button" value="clear" onclick="clearForm()">
         </p>
     </div>
 
