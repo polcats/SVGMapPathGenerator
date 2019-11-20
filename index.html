@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+    <div id="circle"></div>
+    <div id="coordinates">
+        Click anywhere to display coordinates.<br>
+        If problems occur, set your browser to fullscreen view.
+    </div>
+    <svg id="map" style="background: url(map/map.svg) center center no-repeat scroll;"></svg>
+
+    <div id="form">
+        <p>
+            <h1>Enter points </h1>
+            <span id="form-note">NOTE: Separate every x-y pair by a comma. eg (x y, x y, x
+                y)</span><br><br>
+            <textarea id="points"></textarea><br><br>
+            <input type="button" value="show path" onclick="show();">
+            <input type="button" value="add point" onclick="addPoint()">
+        </p>
+    </div>
+
+    <script>
+        document.getElementById("map").onclick = userClicked;
+    </script>
+</body>
+
+</html>
