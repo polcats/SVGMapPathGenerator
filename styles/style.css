@@ -1,0 +1,59 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+
+body {
+    background: #000;
+}
+
+div#coordinates
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    color: #fff;
+}
+
+svg#map
+{
+    width: 768px;
+    height: 1205px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#circle
+{
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+    background: red;
+    border-radius: 10px;
+    cursor: arrow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+div#form
+{
+    position: fixed;
+    right: 10px;
+    top: 0px
+}
+
+span#form-note
+{
+    color:red
+}
+
+textarea#points
+{
+    width: 300px;
+    height: 200px;
+}
