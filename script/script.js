@@ -1,4 +1,5 @@
 var currentX, currentY;
+var prevX, prevY;
 
 function userClicked() {
     var x = event.clientX;
@@ -15,6 +16,13 @@ function userClicked() {
 }
 
 function addPoint() {
+    if (currentX == prevX && currentY == prevY) {
+        return;
+    }
+
+    prevX = currentX;
+    prevY = currentY;
+
     var points = document.getElementById("points").value;
     if (points.length > 0) {
         document.getElementById("points").value += ", " + currentX + " " + currentY;
