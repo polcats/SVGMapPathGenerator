@@ -1,3 +1,3 @@
 # SVGCoordinateFinder
 
- A coordinate finder for the <a href="https://github.com/polcats/InteractiveSvgMap">InteractiveSvgMap</a>
+ A utility tool to create paths and get coordinates for the <a href="https://github.com/polcats/InteractiveSvgMap">InteractiveSvgMap</a>
