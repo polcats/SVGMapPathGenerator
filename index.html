@@ -8,17 +8,16 @@
 <body>
     <div id="circle"></div>
     <div id="coordinates"></div>
-    <svg id="map" style="background: url(map/map.svg) center center no-repeat scroll;"></svg>
+    <svg id="map" style="background: url(map/map.svg) center center no-repeat scroll;" oncontextmenu="clearPoint(); return false;"></svg>
 
     <div id="form">
         <p>
-            <h1>Enter points </h1>
-            <span id="form-note">Click anywhere to get the coordinates.<br>
-                <em>If problems occur, set your browser to fullscreen view.</em></span><br><br>
-            <textarea disabled id="points"></textarea><br><br>
-            <input type="button" value="add point" onclick="addPoint()">
-            <input type="button" value="show path" onclick="show();">
-            <input type="button" value="clear" onclick="clearForm()">
+            <h1>How to create a path:</h1>
+            <span class="form-note">Left-click to create points in the path.</span>
+            <span class="form-note">Right-click to erase points in the path.</span>
+
+            <textarea resizable="false" disabled id="points"></textarea><br><br>
+            <input type="button" value="Reset" onclick="resetPoints();">
         </p>
     </div>
 

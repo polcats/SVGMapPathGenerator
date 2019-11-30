@@ -1,5 +1,4 @@
-*
-{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -10,8 +9,7 @@ body {
     background: #000;
 }
 
-div#coordinates
-{
+div#coordinates {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -19,16 +17,14 @@ div#coordinates
     color: #fff;
 }
 
-svg#map
-{
+svg#map {
     width: 768px;
     height: 1205px;
     margin: 0px;
     padding: 0px;
 }
 
-div#circle
-{
+div#circle {
     width: 10px;
     height: 10px;
     border: 1px solid red;
@@ -40,25 +36,33 @@ div#circle
     left: 50px;
 }
 
-div#form
-{
+div#form {
     position: fixed;
     left: 600px;
-    top: 0px
+    top: 50px;
+}
+h1 {
+    font-size: 20px;
+}
+h1,
+span.form-note {
+    color: #fff;
+    margin: 5px;
 }
 
-span#form-note
-{
-    color:#fff
+span.form-note {
+    display: block;
+    padding: 2px;
+    margin-left: 20px;
 }
 
-textarea#points
-{
+textarea#points {
     width: 300px;
-    height: 200px;
+    height: 100px;
+    margin-top: 10px;
 }
 
-input[type="button"]
-{
+input[type='button'] {
     padding: 5px;
+    float: right;
 }
